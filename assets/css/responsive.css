@@ -1,0 +1,251 @@
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+  }
+  .banner .owl-carousel .item .banner-caption h4,
+  .section-title h3 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .banner .owl-carousel .owl-item.active figure {
+    right: -40px;
+    width: 350px;
+  }
+  .banner {
+    height: 500px;
+  }
+  .banner .owl-carousel {
+    height: 100%;
+  }
+  .card-title .text {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .testimonials-text .text {
+    font-size: 24px;
+  }
+  .author-info h4 {
+    font-size: 20px;
+  }
+  .blog-article:hover figure figcaption h4 {
+    font-size: 24px;
+  }
+  .what-we-offer .text-block h3 {
+    font-size: 40px;
+  }
+  .what-we-offer .text-block.bottom {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.banner .owl-carousel .owl-item figure{
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+  .banner .owl-carousel .item .banner-caption h4,
+  .section-title h3 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .banner .owl-carousel .owl-stage-outer {
+    padding: 110px 0 0 0;
+  }
+  .banner .owl-carousel .item {
+    flex-direction: column-reverse;
+  }
+  .banner .owl-carousel .owl-item.active figure {
+    position: static;
+    transform: translateY(0);
+    width: 100%;
+    padding: 15px;
+  }
+  .banner .owl-carousel .owl-dots {
+    position: static;
+    text-align: center;
+  }
+  .banner .banner-caption {
+    text-align: center;
+  }
+  .what-we-offer .text-block h3 br {
+    display: none;
+  }
+  .what-we-offer .text-block.bottom {
+    margin-top: 3%;
+  }
+  .what-we-offer .text-block h3,
+  .about-us .text-block h3 {
+    font-size: 32px;
+  }
+  .section-title h3 {
+    margin-bottom: 50px;
+  }
+  .section-title p {
+    font-size: 28px;
+  }
+  .section-title p br,
+  .about-us .text-block h3 br {
+    display: none;
+  }
+  .card-title .text {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .testimonials-text .text {
+    font-size: 24px;
+  }
+  .author-info h4 {
+    font-size: 20px;
+  }
+  .blog-article:hover figure figcaption h4 {
+    font-size: 24px;
+  }
+  .latest-blogs {
+    padding: 10% 0;
+  }
+  .contact-us-info {
+    padding: 0;
+  }
+  .footer-widget ul li a,
+  .copyright,
+  .terms-privacy li a,
+  .widget-text {
+    font-size: 12px;
+  }
+  .social-share li {
+    margin: 0 -1px 0 0;
+  }
+  .footer-widget ul li {
+    margin: 0;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .terms-privacy li a::before {
+    height: 5px;
+  }
+  .testimonials-text {
+    padding-right: 0;
+  }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+  .banner {
+    padding-bottom: 30px;
+  }
+  .banner .owl-carousel .item .banner-caption h4,
+  .section-title h3 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .banner .owl-carousel .owl-stage-outer {
+    padding: 110px 0 0 0;
+  }
+  .banner .owl-carousel .item {
+    flex-direction: column-reverse;
+  }
+  .banner .owl-carousel .owl-item figure {
+    position: static;
+    transform: translateY(0);
+    width: 100%;
+    padding: 15px;
+    display: none;
+  }
+  .banner .owl-carousel .owl-dots {
+    text-align: center;
+  }
+  .banner .banner-caption {
+    text-align: center;
+  }
+  .what-we-offer .text-block h3 br {
+    display: none;
+  }
+  .what-we-offer .text-block.bottom {
+    margin-top: 3%;
+  }
+  .what-we-offer .text-block h3,
+  .about-us .text-block h3 {
+    font-size: 40px;
+  }
+  .section-title h3 {
+    margin-bottom: 50px;
+  }
+  .section-title p {
+    font-size: 28px;
+  }
+  .section-title p br,
+  .about-us .text-block h3 br,
+  .section-title h3 br {
+    display: none;
+  }
+  .blog-article:hover figure figcaption h4 {
+    font-size: 24px;
+  }
+  .latest-blogs {
+    padding: 10% 0;
+  }
+  .contact-us-info {
+    padding: 0;
+  }
+  .testimonials-text {
+    padding-right: 0;
+  }
+  .social-share,
+  .terms-privacy {
+    margin-top: 30px;
+  }
+  .social-share,
+  .widget-text,
+  .terms-privacy,
+  .copyright {
+    text-align: center;
+  }
+  .what-we-offer .text-block {
+    padding: 3%;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .widget-text {
+    display: none;
+  }
+  .footer-bottom {
+    margin-top: 0 !important;
+  }
+  .contact-us {
+    padding: 10% 0;
+  }
+  .contact-us-info .section-title h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .header .navigation {
+    position: absolute;
+    right: 38px;
+    top: 36px;
+  }
+  .header .navigation .dropdown-menu {
+    width: 362px;
+  }
+  .header.header.animate__animated .navigation {
+    top: 22px;
+  }
+  .footer-logo{
+	display: none;
+  }
+}
