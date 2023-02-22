@@ -182,6 +182,7 @@ body {
 .section-title h3 {
   font-size: 74px;
   line-height: 74px;
+  margin: 0 0 30px 0;
   font-family: var(--poppins_semi_bold);
 }
 .section-title p {
@@ -214,12 +215,29 @@ body {
 
 /* Header Style Starts */
 .header {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 25px;
   z-index: 99;
+  background-color: var(--green);
+}
+.header:after {
+  content: "";
+  height: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(
+    to right,
+    #ed8034 0%,
+    #ed8034 33%,
+    #feb123 33%,
+    #feb123 66%,
+    #2184cd 66%,
+    #2184cd 100%
+  );
 }
 .header-inner {
   display: flex;
@@ -228,95 +246,147 @@ body {
 }
 .header.animate__animated {
   position: fixed;
-  padding: 10px;
   background-color: var(--green);
 }
-.header .navigation {
-  float: right;
+.middle-header {
+  padding: 20px 10px 10px 10px;
 }
-.header .navigation .dropdown-toggle::after {
-  display: none;
-}
-.navigation .dropdown-menu {
-  border-radius: 0;
-  padding: 30px;
-  max-width: 362px;
-  background-color: var(--dark_purple);
-  width: 100%;
-  top: -26px !important;
-  position: relative;
-}
-.navigation .dropdown-menu .icon-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
+.header .social-share li a {
   text-align: center;
+  line-height: 43px;
   color: var(--white);
-  cursor: pointer;
+  border-radius: 100%;
+  border: 1px solid transparent;
+  background-color: var(--green_hover);
+  transition: all 0.5s ease-out;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
-.navigation .dropdown-menu li {
+.header .social-share li a:hover{
+  color: var(--green);
+  border-color: var(--white);
+  transform: rotate(360deg);
+  background-color: var(--white);
+}
+.middle-header .social-share {
+  margin: 0;
+  text-align: right;
+}
+.navigation.navbar {
   float: left;
   width: 100%;
-  margin: 6px 0;
+  padding: 0;
+  background-color: var(--green_hover) !important;
 }
-.navigation .dropdown-menu li a {
+.navigation.navbar ul {
+  padding: 0;
+  float: left;
+  margin: 0;
+}
+.navigation.navbar ul li {
+  list-style: none;
+  float: left;
   position: relative;
-  font-size: 30px;
+  z-index: 99;
+  padding: 6px 15px;
+}
+.navigation.navbar ul li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: -1;
+  background-color: var(--green);
+  clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
+}
+.navigation.navbar ul li:hover:after {
+  display: block;
+}
+.navigation.navbar ul li a {
+  display: block;
+  font-size: 20px;
   color: var(--white);
   font-family: var(--poppins_semi_bold);
 }
-.navigation .dropdown-menu li a:before {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  right: 0;
-  width: 100%;
-  height: 10px;
+.navigation.navbar ul li ul {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  width: 260px;
+  border-radius: 0;
+  border-color: var(--green_hover);
   background-color: var(--green);
-  clip-path: polygon(0 8%, 98% 2%, 100% 100%, 0 92%);
-  z-index: -1;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
-.navigation .dropdown-menu li a:hover::before {
-  display: block;
-}
-.navigation .dropdown-menu li:first-child {
-  margin-bottom: 30px;
-}
-.navigation .dropdown-menu li:first-child img {
-  width: 60px;
-  height: 56px;
-}
-.navigation .dropdown-menu li ul {
-  text-align: left;
-}
-.navigation .dropdown-menu li ul li {
-  float: none;
-  width: auto;
-  margin: 0 10px 0 0 !important;
+.navigation.navbar ul li ul li {
+  width: 100%;
   padding: 0;
 }
-.navigation .dropdown-menu li:last-child {
-  margin-top: 30px;
-  margin-bottom: 0;
+.navigation.navbar ul li ul li a {
+  padding: 10px 20px;
+  font-size: 16px;
+  display: block;
+  position: relative;
 }
-.navigation .dropdown-menu li ul li:first-child img {
-  height: auto;
-  width: auto;
+.navigation.navbar ul li:hover > ul {
+  display: block;
 }
-.navigation .dropdown-menu li ul li a::before,
-.navigation .dropdown-menu li ul li a:hover:before {
+.navigation.navbar ul li ul li ul {
+  left: 100%;
+  top: -1px;
+}
+.navigation.navbar ul li ul li:hover:after {
   display: none;
+}
+.navigation.navbar ul li:hover ul li a {
+  position: relative;
+  color: var(--white);
+}
+.navigation.navbar ul li:hover ul li a:hover {
+  background-color: var(--green_hover);
+}
+.navigation.navbar ul li:hover ul li > a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 10px;
+  height: 16px;
+  transform: translateY(-50%);
+}
+.header .navbar-toggler {
+  width: 100%;
+  padding: 15px 15px;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 22px;
+  display: none;
+  font-family: var(--poppins_semi_bold);
+}
+.header .navbar-toggler .bars {
+  float: right;
+  font-size: 28px;
+  color: var(--white);
+}
+.header .navbar-toggler .menu-title {
+  float: left;
+  color: var(--white);
 }
 
 /* Banner Start */
 .banner {
   background-color: var(--green);
   position: relative;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .banner::after {
   content: "";
@@ -337,7 +407,6 @@ body {
   background-color: var(--green_hover);
 }
 .banner .owl-carousel .owl-stage-outer {
-  padding: 150px 0 0 0;
   height: 100%;
 }
 .banner .owl-carousel .owl-item figure {
@@ -394,12 +463,13 @@ body {
 }
 .what-we-offer {
   padding: 10% 0;
+  overflow-x: hidden;
   background: url("../images/pattern-bg.png") no-repeat;
   background-size: cover;
 }
 .what-we-offer .text-block {
   padding: 10%;
-  height: 100%;
+  /* height: 100%; */
 }
 .what-we-offer .text-block h3 {
   font-size: 54px;
@@ -408,6 +478,7 @@ body {
 }
 .what-we-offer .text-block.bottom {
   margin-top: 30%;
+  padding: 15%;
 }
 .what-we-offer .text-block.bottom p {
   color: var(--dark_purple);
@@ -518,6 +589,7 @@ body {
   color: var(--black);
   padding-left: 20px;
   position: relative;
+  margin: 10px 0;
 }
 .card ul li::after {
   content: "";
@@ -807,6 +879,9 @@ body {
 .terms-privacy li a {
   color: var(--white);
   font-family: var(--poppins_medium);
+}
+.footer-widget ul li a{
+  transition: all 0.2s ease-out;
 }
 .footer-widget ul li a:hover {
   color: var(--green);

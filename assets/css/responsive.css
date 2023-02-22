@@ -1,7 +1,29 @@
 @media only screen and (min-width: 1400px) and (max-width: 1920px) {
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .what-we-offer .text-block h3,
+  .about-us .text-block h3 {
+    font-size: 32px;
+  }
+  .banner {
+    padding: 0;
+  }
+  .banner .owl-carousel .owl-dots {
+    text-align: center;
+    bottom: 20px;
+  }
+  .banner .owl-carousel .owl-stage-outer {
+    padding: 10% 0;
+  }
+  .banner .owl-carousel .item .banner-caption h4{
+    font-size: 44px;
+  }
+  .banner .owl-carousel .owl-item figure{
+    width: 320px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
   .container {
     max-width: 100%;
   }
@@ -15,7 +37,13 @@
     width: 350px;
   }
   .banner {
-    height: 500px;
+    padding: 0;
+  }
+  .banner .owl-carousel .owl-stage-outer {
+    padding: 10% 0;
+  }
+  .banner .owl-carousel .owl-dots {
+    bottom: 30px;
   }
   .banner .owl-carousel {
     height: 100%;
@@ -39,13 +67,25 @@
   .what-we-offer .text-block.bottom {
     margin-top: 0;
   }
+  .what-we-offer .text-block h3,
+  .about-us .text-block h3 {
+    font-size: 32px;
+  }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.banner .owl-carousel .owl-item figure{
-		display: none;
-	}
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner .owl-carousel .owl-item figure {
+    display: none;
+  }
+  .banner {
+    padding: 0;
+  }
+  .banner .owl-carousel .owl-stage-outer {
+    padding: 10% 0;
+  }
+  .banner .owl-carousel .owl-dots {
+    bottom: 30px;
+  }
   .container {
     max-width: 100%;
   }
@@ -53,9 +93,6 @@
   .section-title h3 {
     font-size: 44px;
     line-height: 44px;
-  }
-  .banner .owl-carousel .owl-stage-outer {
-    padding: 110px 0 0 0;
   }
   .banner .owl-carousel .item {
     flex-direction: column-reverse;
@@ -136,6 +173,32 @@
   .owl-theme .owl-nav.disabled + .owl-dots {
     position: static;
   }
+  .navigation.navbar ul,
+  .navigation.navbar ul li {
+    width: 100%;
+  }
+  .navigation.navbar ul li:hover::after {
+    clip-path: none;
+  }
+  .header .navigation .container {
+    padding: 0;
+  }
+  .header .navigation ul li ul {
+    position: static;
+    width: 100%;
+    padding: 5px;
+  }
+  .header .navbar-toggler {
+    display: flex;
+  }
+  .header .navbar-collapse {
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid transparent;
+  }
+  .header .navbar-collapse.show {
+    border-color: #0cce6b;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -143,15 +206,18 @@
     max-width: 100%;
   }
   .banner {
-    padding-bottom: 30px;
+    padding: 0;
+  }
+  .banner .owl-carousel .owl-stage-outer {
+    padding: 10% 0;
+  }
+  .banner .owl-carousel .owl-dots {
+    bottom: 30px;
   }
   .banner .owl-carousel .item .banner-caption h4,
   .section-title h3 {
     font-size: 44px;
     line-height: 44px;
-  }
-  .banner .owl-carousel .owl-stage-outer {
-    padding: 110px 0 0 0;
   }
   .banner .owl-carousel .item {
     flex-direction: column-reverse;
@@ -231,21 +297,37 @@
     font-size: 40px;
     line-height: 40px;
   }
+  .navigation.navbar ul,
+  .navigation.navbar ul li {
+    width: 100%;
+  }
+  .navigation.navbar ul li:hover::after {
+    clip-path: none;
+  }
+  .header .navigation .container {
+    padding: 0;
+  }
+  .header .navigation ul li ul {
+    position: static;
+    width: 100%;
+    padding: 5px;
+  }
+  .header .navbar-toggler {
+    display: flex;
+  }
+  .header .navbar-collapse {
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid transparent;
+  }
+  .header .navbar-collapse.show {
+    border-color: #0cce6b;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
-  .header .navigation {
-    position: absolute;
-    right: 38px;
-    top: 36px;
-  }
-  .header .navigation .dropdown-menu {
-    width: 362px;
-  }
-  .header.header.animate__animated .navigation {
-    top: 22px;
-  }
-  .footer-logo{
-	display: none;
+  .logo,
+  .middle-header .social-share {
+    text-align: center;
   }
 }

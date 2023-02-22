@@ -4,8 +4,9 @@ $(document).ready(function () {
     margin: 10,
     nav: false,
     items: 1,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 5000,
+    autoHeight: true,
     autoplayHoverPause: true,
   });
 
@@ -42,4 +43,5 @@ $(document).ready(function () {
       sticky.removeClass("animate__animated animate__slideInDown");
     }
   });
+  AOS.init();
 });
