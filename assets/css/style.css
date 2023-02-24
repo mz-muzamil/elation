@@ -235,7 +235,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  padding: 15px 30px;
+  padding: 25px 30px;
   width: 100%;
   z-index: 99;
   background-color: var(--green);
@@ -391,7 +391,7 @@ body {
 .banner {
   background-color: var(--green);
   position: relative;
-  padding: 40px 0 80px 0;
+  /* padding: 40px 0 80px 0; */
 }
 .banner::after {
   content: "";
@@ -414,11 +414,15 @@ body {
 .banner .owl-carousel .owl-stage-outer {
   height: 100%;
 }
+.banner .owl-carousel .owl-stage-outer{
+  padding: 140px 0;
+  min-height: 700px;
+}
 .banner .owl-carousel .owl-item figure {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 480px;
+  width: 800px;
 }
 .banner .owl-carousel .owl-item.active figure {
   right: -50px;
@@ -429,7 +433,7 @@ body {
 }
 .banner .owl-carousel .owl-dots {
   position: relative;
-  bottom: -20px;
+  bottom: 40px;
   width: 100%;
   max-width: 1310px;
   margin: 0 auto;
@@ -438,7 +442,7 @@ body {
 .banner .owl-carousel .item .banner-caption h4 {
   font-size: 74px;
   z-index: 2;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   color: var(--dark_purple);
   font-family: var(--poppins_semi_bold);
 }

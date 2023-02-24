@@ -4,9 +4,9 @@ $(document).ready(function () {
     margin: 10,
     nav: false,
     items: 1,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 5000,
-    autoHeight: true,
+    autoHeight: false,
     autoplayHoverPause: true,
   });
 
