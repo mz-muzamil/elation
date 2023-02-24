@@ -1,6 +1,21 @@
 @media only screen and (min-width: 1400px) and (max-width: 1920px) {
 }
 
+@media only screen and (min-width: 1281px) and (max-width: 1300px) {
+  .banner .owl-carousel .owl-dots {
+    max-width: 1140px;
+  }
+  .banner .owl-carousel .owl-item figure {
+    width: 600px;
+  }
+  .banner .owl-carousel .item .banner-caption h4 {
+    font-size: 62px;
+  }
+  .banner .owl-carousel .owl-stage-outer {
+    padding: 6% 0;
+    min-height: initial;
+  }
+}
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .what-we-offer .text-block h3,
   .about-us .text-block h3 {
@@ -14,16 +29,26 @@
     bottom: 20px;
   }
   .banner .owl-carousel .owl-stage-outer {
-    padding: 10% 0;
+    padding: 6% 0;
+    min-height: initial;
   }
-  .banner .owl-carousel .item .banner-caption h4{
+  .banner .owl-carousel .owl-item.active figure {
+    right: -40px;
+  }
+  .banner .owl-carousel .item .banner-caption h4 {
     font-size: 44px;
   }
-  .banner .owl-carousel .owl-item figure{
+  .banner .owl-carousel .owl-item figure {
     width: 320px;
   }
-  .header{
+  .header {
     padding: 15px 5px;
+  }
+  .card-title {
+    flex-direction: column;
+  }
+  .card-title .text small {
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -35,7 +60,7 @@
     font-size: 44px;
     line-height: 44px;
   }
-  .header{
+  .header {
     padding: 15px 5px;
   }
   .banner .owl-carousel .owl-item.active figure {
@@ -46,7 +71,11 @@
     padding: 0;
   }
   .banner .owl-carousel .owl-stage-outer {
-    padding: 10% 0;
+    padding: 6% 0;
+    min-height: initial;
+  }
+  .banner .owl-carousel .owl-item.active figure {
+    right: -40px;
   }
   .banner .owl-carousel .owl-dots {
     bottom: 30px;
@@ -76,6 +105,12 @@
   .what-we-offer .text-block h3,
   .about-us .text-block h3 {
     font-size: 32px;
+  }
+  .card-title {
+    flex-direction: column;
+  }
+  .card-title .text small {
+    justify-content: center;
   }
 }
 
@@ -183,7 +218,7 @@
   .navigation.navbar ul li:hover::after {
     clip-path: none;
   }
-  .header{
+  .header {
     padding: 15px 5px;
   }
   .header .navigation .container {
@@ -215,7 +250,7 @@
     padding: 0;
   }
   .banner .owl-carousel .owl-stage-outer {
-    padding: 10% 0;
+    padding: 6% 0;
   }
   .banner .owl-carousel .owl-dots {
     bottom: 30px;
@@ -240,7 +275,7 @@
   .banner .banner-caption {
     text-align: center;
   }
-  .header{
+  .header {
     padding: 15px 5px;
   }
   .header .navigation {
@@ -338,6 +373,13 @@
   }
   .header .navbar-collapse.show {
     border-color: #0cce6b;
+  }
+  .what-we-offer .text-block.bottom {
+    margin-top: 3%;
+    padding: 5%;
+  }
+  .about-us .text-block {
+    padding: 5%;
   }
 }
 
